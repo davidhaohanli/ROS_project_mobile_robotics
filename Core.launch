@@ -1,0 +1,9 @@
+<launch>
+	<include file="$(find turtlebot_bringup)/launch/minimal.launch">
+	</include>
+	<include file="$(find turtlebot_navigation)/launch/amcl_demo.launch">
+		<arg name="map_file" value="/home/turtlebot/BJ/map/map.yaml"/>
+	</include>
+	<include file="$(find visp_auto_tracker)/launch/tracklive_usb.launch">
+	</include>
+</launch>
